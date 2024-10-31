@@ -2,15 +2,15 @@ body {
     font-family: 'Comic Neue', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Simple light background */
+    background-color: #e3f2fd; /* Light blue background */
 }
 
 header {
-    background-color: #00ffaa; /* Bright primary color */
-    color: #2c3e50; /* Darker text color */
+    background-color: #ff5722; /* Bright primary red */
+    color: #ffffff; /* White text */
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #b7689a; /* Decorative border */
+    border-bottom: 5px solid #ffeb3b; /* Decorative yellow border */
 }
 
 nav {
@@ -19,15 +19,24 @@ nav {
 
 .nav-btn, .quiz-btn, .game-btn {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px; /* Margin between buttons */
-    padding: 10px; /* Padding for buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: #ffeb3b; /* Bright yellow */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    color: #000; /* Black text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-btn:hover, .quiz-btn:hover, .game-btn:hover {
+    background-color: #ffc107; /* Darker yellow on hover */
 }
 
 .button-container {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
-    flex-wrap: wrap; /* Wrap buttons if needed */
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
 }
 
 section {
@@ -43,10 +52,10 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 .fun-image {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure it's a block element */
     margin: 20px auto; /* Center the image horizontally with margin */
 }
-
