@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Kids Adventure!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Fun Kids Adventure! by: John Maxime Aritmetica</h1>
+        <nav>
+            <button class="nav-btn" data-section="explore">Explore</button>
+            <button class="nav-btn" data-section="quiz">Quiz</button>
+            <button class="nav-btn" data-section="games">Games</button>
+            <button class="nav-btn" data-section="about">About Us</button>
+        </nav>
+    </header>
+    <main>
+        <section id="explore" class="active-section">
+            <h2>Explore and Learn!</h2>
+            <p>This website is full of fun activities and learning games just for you!</p>
+            <img src="https://thumbs.dreamstime.com/b/kids-painted-hand-art-colorful-rainbow-hand-prints-sky-background-fun-life-nature-web-design-related-79010396.jpg" alt="Fun Image" class="fun-image">
+            <button id="changeTextBtn">Click me for a surprise!</button>
+        </section>
+        <section id="quiz" style="display: none;">
+            <h2>Quick Quiz!</h2>
+            <p>What is the capital of France?</p>
+            <div class="button-container">
+                <button class="quiz-btn" data-answer="correct">Paris</button>
+                <button class="quiz-btn" data-answer="wrong">London</button>
+                <button class="quiz-btn" data-answer="wrong">Berlin</button>
+            </div>
+            <p id="quizResult"></p>
+            <button id="resetQuizBtn" style="display:none;">Try Again</button>
+        </section>
+        <section id="games" style="display: none;">
+            <h2>Fun Games!</h2>
+            <p>Get ready to play some exciting games!</p>
+            <div class="button-container">
+                <button class="game-btn" onclick="alert('You clicked Game 1!')">Game 1</button>
+                <button class="game-btn" onclick="alert('You clicked Game 2!')">Game 2</button>
+                <button class="game-btn" onclick="alert('You clicked Game 3!')">Game 3</button>
+            </div>
+        </section>
+        <section id="about" style="display: none;">
+            <h2>About the creator: </h2>
+            <p>This is made by John Maxime Aritmetica from ET712</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; October 29 2024</p>
+    </footer>
+    <script src="website.js"></script>
+</body>
+</html>
+
